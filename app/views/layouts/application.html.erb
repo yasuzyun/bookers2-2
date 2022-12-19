@@ -11,7 +11,10 @@
   <body>
     <%= render 'layouts/header' %>
       <main>
-        <p id="notice"><%= notice %></p>
+      <div class="container">
+      <p id="notice"><%= notice %></p> <!--デバイスでnotice設定されているので呼び出してるだけ-->
+    </div>
+       <%= yield %>
       </main>
     <%= render 'layouts/footer' %>
   </body>
